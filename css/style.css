@@ -1,0 +1,500 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #10101c;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 25px 5%;
+    background: #0d0d18;
+}
+
+.navbar nav {
+    display: flex;
+    gap: 35px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar a:hover {
+    color: #b9a3ff;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 26px;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+
+    min-height: 450px;
+    padding: 50px 5%;
+
+    background: linear-gradient(
+        90deg,
+        #171728,
+        #241d2f
+    );
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    color: #ccc;
+    font-size: 24px;
+}
+
+.hero-image {
+    width: 48%;
+}
+
+.hero-image img {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    object-fit: contain;
+    background: #1b1b2e;
+    display: block;
+    border-radius: 8px;
+}
+
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+.section {
+    padding: 45px 5%;
+}
+
+.section h2,
+.two-column h2 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.card {
+    flex: 1;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: #1b1b2e;
+    display: block;
+    border-radius: 8px;
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-top: 14px;
+}
+
+.card p {
+    font-size: 17px;
+    color: #bbb;
+    margin-top: 6px;
+}
+
+
+/* =========================
+   SONGS
+========================= */
+
+.song-card {
+    flex: 1;
+}
+
+.song-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #1b1b2e;
+    display: block;
+    border-radius: 8px;
+}
+
+.song-card p {
+    font-size: 19px;
+    margin-top: 12px;
+}
+
+
+/* =========================
+   ALBUMS + VIDEOS
+========================= */
+
+.two-column {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    padding: 45px 5%;
+}
+
+.albums,
+.videos {
+    flex: 1;
+}
+
+
+/* Album rows */
+
+.album {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    padding: 14px 0;
+    border-bottom: 1px solid #252536;
+}
+
+.album span {
+    color: #aaa;
+    font-size: 20px;
+    width: 30px;
+}
+
+.album img {
+    width: 110px;
+    height: 110px;
+    aspect-ratio: 1 / 1;
+    object-fit: contain;
+    background: #1b1b2e;
+    display: block;
+    border-radius: 6px;
+}
+
+.album p {
+    font-size: 20px;
+}
+
+
+/* Videos */
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.video-grid > div {
+    width: calc(50% - 10px);
+}
+
+.video-grid img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #1b1b2e;
+    display: block;
+    border-radius: 8px;
+}
+
+.video-grid p {
+    font-size: 17px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   POSTS
+========================= */
+
+.post {
+    flex: 1;
+}
+
+.post img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: contain;
+    background: #1b1b2e;
+    display: block;
+    border-radius: 8px;
+}
+
+.post p {
+    font-size: 19px;
+    margin-top: 12px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 50px 5%;
+    margin-top: 30px;
+
+    background: #0b0b14;
+}
+
+footer > div {
+    width: 22%;
+}
+
+footer h3 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+footer p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 700px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .navbar nav {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 42px;
+    }
+
+    .cards {
+        flex-wrap: wrap;
+    }
+
+    .card,
+    .song-card,
+    .post {
+        flex-basis: 45%;
+    }
+
+    .two-column {
+        flex-direction: column;
+    }
+
+    footer {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    footer > div {
+        width: 45%;
+    }
+}
+
+
+/* =========================
+   INTERACTIVITY
+========================= */
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    scroll-margin-top: 80px;
+}
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+}
+
+.navbar a {
+    transition: color 0.2s;
+}
+
+.navbar a.active {
+    color: #b9a3ff;
+}
+
+/* Menu button only shows on small screens */
+.menu-btn {
+    display: none;
+}
+
+/* Clickable pictures */
+.hero-image img,
+.card img,
+.song-card img,
+.post img,
+.video-grid img,
+.album img {
+    cursor: zoom-in;
+    transition: transform 0.25s, filter 0.25s;
+}
+
+.hero-image img:hover,
+.card img:hover,
+.song-card img:hover,
+.post img:hover,
+.video-grid img:hover,
+.album img:hover {
+    transform: scale(1.03);
+    filter: brightness(1.15);
+}
+
+/* Fade-in on scroll */
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: none;
+}
+
+/* Lightbox */
+.lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    background: rgba(5, 5, 12, 0.92);
+}
+
+.lightbox.open {
+    display: flex;
+}
+
+.lightbox img {
+    max-width: 88vw;
+    max-height: 78vh;
+    border-radius: 8px;
+    cursor: default;
+    transform: none;
+    filter: none;
+}
+
+.lightbox-caption {
+    font-size: 20px;
+    color: #ddd;
+}
+
+.lightbox button {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    color: white;
+    font-size: 32px;
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.lightbox button:hover {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.lightbox-close { top: 20px; right: 25px; }
+.lightbox-prev  { left: 25px; top: 50%; }
+.lightbox-next  { right: 25px; top: 50%; }
+
+@media (max-width: 700px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar nav {
+        width: 100%;
+        flex-direction: column;
+        gap: 18px;
+        padding-top: 20px;
+    }
+
+    .navbar nav.open {
+        display: flex;
+    }
+
+    .lightbox-prev { left: 10px; }
+    .lightbox-next { right: 10px; }
+}
